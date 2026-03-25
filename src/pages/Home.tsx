@@ -56,8 +56,14 @@ function draw() {
     }
   };
 
-  // Add a simple effect to simulate 'File > Save' or just keep it for later
-  console.log("Save function ready:", !!handleSave);
+  // Escape key closes modal
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setShowModal(false);
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
 
   if (isLoginPage) {
     return (
