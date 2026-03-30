@@ -1,4 +1,4 @@
-### ♿ Accessibility Test Suite
+###  Accessibility Test Suite
 
 Performs automated accessibility validation using **axe-core** across Chromium, Firefox, and WebKit.
 Consistent cross-browser failures confirm the presence of genuine accessibility issues, demonstrating reliable and non-flaky test behavior.
@@ -7,7 +7,7 @@ Consistent cross-browser failures confirm the presence of genuine accessibility 
 
 ---
 
-### ⌨️ Keyboard Navigation Issue
+###  Keyboard Navigation Issue
 
 Validates keyboard navigation for toolbar buttons.
 The test failed because the **"Run sketch" button is not focusable**, indicating a keyboard accessibility issue.
@@ -16,7 +16,7 @@ The test failed because the **"Run sketch" button is not focusable**, indicating
 
 ---
 
-### 🔍 Test Execution Steps
+###  Test Execution Steps
 
 Shows step-by-step execution of the keyboard navigation test:
 
@@ -30,12 +30,12 @@ This confirms a failure in **keyboard accessibility and focus handling**.
 
 ---
 
-### 🎥 Debugging Artifacts
+###  Debugging Artifacts
 
 Includes Playwright debugging artifacts such as:
 
-* 🎥 Video recording of test execution
-* 📎 Error context with logs and stack trace
+*  Video recording of test execution
+*  Error context with logs and stack trace
 
 These enable detailed analysis and faster debugging of test failures.
 
